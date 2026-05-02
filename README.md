@@ -1,77 +1,51 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🚀 Advanced Memo App (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+モダンな技術スタックで構築した、多機能なメモ帳アプリです。
 
-Currently, two official plugins are available:
+## ✨ 特徴
+- **TypeScript**: 型安全なコード設計
+- **Framer Motion**: スムーズなアニメーション（追加・削除・編集時）
+- **LocalStorage**: ブラウザを閉じてもデータが消えません
+- **ファイル出力**: メモの内容を `.txt` ファイルとしてダウンロード可能
+- **編集機能**: ダブルクリックで直感的にメモ内容を編集
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 技術スタック
+- **Frontend**: React (Vite)
+- **Language**: TypeScript
+- **Animation**: Framer Motion
+- **Styling**: Inline Styles (Modern Card UI)
 
-## React Compiler
+## 📦 インストールと起動
+```bash
+# クローン
+git clone [https://github.com/hirof35/my-memo-app.git](https://github.com/hirof35/my-memo-app.git)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 依存関係のインストール
+npm install
 
-## Expanding the ESLint configuration
+# 開発サーバーの起動
+npm run dev
+📝 使い方
+メモを入力して「追加」ボタンまたは Enter キーを押します。
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+メモを編集するには、メモのテキストをダブルクリックするか「編集」ボタンを押します。
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+削除ボタンでメモを削除できます。
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+「.txt形式で書き出す」ボタンで、現在のメモ一覧を保存できます。
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 2. GitHubに反映させる
+ファイルを保存したら、ターミナルで以下のコマンドを実行してGitHubにアップロードします。
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# my-memo-app
->>>>>>> 96ebb2892913ce1d269c784f50111f496ff45b70
+```bash
+# 変更をステージング
+git add README.md
+
+# コミット
+git commit -m "Update README with project details"
+
+# GitHubに送信
+git push origin main
