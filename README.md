@@ -1,6 +1,7 @@
 # 🚀 Advanced Memo App (React + TypeScript)
 
 モダンな技術スタックで構築した、多機能なメモ帳アプリです。
+<img width="893" height="642" alt="スクリーンショット 2026-05-02 145339" src="https://github.com/user-attachments/assets/0a58245f-c838-4880-a618-12ecacb7fe5e" />
 
 ## ✨ 特徴
 - **TypeScript**: 型安全なコード設計
